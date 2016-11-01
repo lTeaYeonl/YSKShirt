@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta cahrset="utf-8">
+    <meta name="description" content="ZKJH_BS_LIST">
+    <meta name="keywords" content="KJH, GSP, BSP, LIST">
+    <meta name="author" content="KimJiHun">
+    <meta http-equiv="content-language" content="ko">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8"
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JihunKim BSP_LIST | KJH">
+    <!-- 메타 데이터 선언 -->
+    <title>BSP 게시판</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet" type="text/css">
+    <style>
+      body{
+        text-align:center;
+      }
+      table, th{
+        text-align:center;
+      }
+
+     @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+    h1 {font-family: 'Nanum Pen Script', serif; font-size: 48px; color:#FFFFFF; height: 60px; top:0; bottom:0; margin: auto; margin-top: auto; margin-bottom: auto; vertical-align: middle;}
+    h1 {background-color: #5bc0de;}
+    h2,h4 {font-family: 'Nanum Pen Script', serif; font-size: 30px;}
+    p,li,body {font-family: 'Nanum Pen Script', serif; font-size: 24px;}
+    th,td {font-family: 'Nanum Pen Script', serif; font-size: 20px;}
+    div,input {font-family: 'Nanum Pen Script', serif;}
+    button {font-family: 'Nanum Pen Script', serif; font-size: 26px;}
+    dropdown-menu {width: 300px !important;
+                   height: 400px !important;}
+    </style>
+  </head>
+  <script>
+    function detailpage(IDX){
+      document.getElementById('IDX').value=IDX;
+      document.form.submit();
+    }
+    function goCreate(){
+      document.form.method="post";
+      document.form.action="ZKJH_BS_CREATE.htm";
+      document.form.submit();
+    }
+  </script>
+  <body>
+
+      <table width="100%" class="table table-striped table-bordered table-hover">
+        <h1><strong>BSP 게시판</strong></h1>
+        <thead>
+          <tr class="primary">
+            <th>#</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>View</th>
+          </tr>
+        </thead>
+        <font face="맑은 고딕">
+        <div class="container">
+          <h3>Tabs</h3>
+          <ul class="nav nav-pills nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+          </ul>
+          <br>
+          <p id="nav_special"><strong>Notes:</strong>
+          Hello
+          </p>
+        </div>
+        <div class="container"></div>
+        <button type="button" class="btn btn-danger btn btn-lg" data-toggle="modal" data-target="#myModal" tabindex="-1" role="stylelog" style="float:left;">공지사항</button>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog" align="left">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true"></span>
+                  <span class="sr-only">
+                  </span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">공지사항</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                   <div class="col-md-4">
+                     <div class="panel panel-primary">
+                       <div class="panel-heading">회원가입</div>
+                       <div class="panel-body">
+                         명령·규칙 또는 처분이 헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다.
+                       </div>
+                     </div>
+                   </div>
+                   <div class="col-md-4">
+                     <div class="panel panel-primary">
+                       <div class="panel-heading">규칙</div>
+                       <div class="panel-body">
+                         국회는 정부의 동의없이 정부가 제출한 지출예산 각항의 금액을 증가하거나 새 비목을 설치할 수 없다. 한줄 더늘리기 한줄 더늘리기
+                       </div>
+                     </div>
+                   </div>
+                   <div class="col-md-4">
+                     <div class="panel panel-primary">
+                       <div class="panel-heading">기타등등</div>
+                       <div class="panel-body">
+                         공개하지 아니한 회의내용의 공표에 관하여는 법률이 정하는 바에 의한다. 한줄 더늘리기 한줄 더늘리기 한줄 더늘리기 한줄 더늘리기
+                       </div>
+                     </div>
+                   </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                <!-- <button type="button" class="btn btn-primary">저장</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container" align="left">
+          <button type="button" class="btn btn-info btn btn-lg" data-toggle="collapse" data-target="#demo">Simple Test</button>
+          <div id="demo" class="collapse">
+           <!--  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ducimus aperiam quos, laborum doloremque sed enim. Laudantium laborum perferendis quos dolore dolores maiores beatae quis eos molestias iusto, placeat sint! -->
+            COLLAPSE 태그 CLASS는 COLLAPSE 이며 테스트로 만든 데모이다. ID는 demo, #demo 홀롤롤로루루 숫자는 1234567890
+          </div>
+        </div><br>
+        <!-- <div class="container">
+          <h2>List Group With Badges</h2>
+          <ul>
+            <li class="list-group-item">New <span class="badge">12</span></li>
+            <li class="list-group-item">Deleted <span class="badge">5</span></li>
+            <li class="list-group-item">Warnings <span class="badge">3</span></li>
+          </ul>
+        </div> -->
+        <!-- <div class="progress" class="info">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+  aria-valuenow="27" aria-valuemin="0" aria-valuemax="100" style="width:27%">
+    완성률 : 27%
+            </div>
+        </div> -->
+        <div class="container">
+          <h2><strong>게시판 완성도</strong></h2>
+          <p>현재 게시판 완성률을 %으로 나타낸 그래프 입니다.</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+            List
+            </div>
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+            View
+            </div>
+            <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+            Create
+            </div>
+          </div>
+        </div>
+
+        <!-- <button type="button" class="btn btn-primary btn-lg" date-toggle="modal" data-target="#myModal">
+        Launch Demo Modal
+        </button>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <ul class="breadcrumb">
+        <li><a href="#">게시판</a></li>
+        <li><a href="#">글쓰기</a></li>
+        <li><a href="#">글목록</a></li>
+        <li class="active">Main Page</li>
+    </ul>
+    <div class="dropdown" align="left">
+          <button class="btn btn-defailt btn-lg dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">게시물
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" href="#">HTML</a></li>
+          <li role="presentation"><a role="menuitem" href="#">CSS</a></li>
+          <li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
+        </ul>
+    </div>
+    <tbody>
+          <% SORT wa_list by IDX ASCENDING. %>
+          <% LOOP AT wa_list INTO one_list. %>
+          <tr onclick="detailpage(<%= one_list-IDX %>);">
+            <td><%= one_list-IDX %></td>
+            <td><%= one_list-TITLE %></td>
+            <td><%= one_list-GDSCR %></td>
+            <td><%= one_list-GUSER %></td>
+            <td><%= one_list-GDATE %></td>
+            <td><%= one_list-GVIEW %></td>
+          </tr>
+          <% ENDLOOP.%>
+        </tbody>
+      </table>&nbsp;
+      <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul>
+      <form id="form" name="form" method="post" action="ZKJH_BS_VIEW.htm">
+      <input type="hidden" id="IDX" name="IDX" value="">
+      </form>
+      <button type="button" class="btn btn-primary btn-lg" style="float:left"> 총 게시물 수 : <span class="badge"> <%= sy-index %> 개 </span>
+      </button>
+      <form action="ZKJH_BS_LIST.htm" method="post"></form>
+      <form class="navbar-search pull=left">
+        <input type="text" class="search-query" placeholder="검색어" name="search">
+        <button type="submit" class="btn btn-info btn-lg" name="search">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+        <button class="btn btn-warning btn-lg" onclick="goCreate();" style="float:right;">Write</button>
+      </form>
+    </font>
+  </body>
+</html>
